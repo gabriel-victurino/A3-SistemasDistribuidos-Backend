@@ -1,4 +1,4 @@
-# A3 de Sistemas Distribuidos | Back-end
+# A3 de Sistemas Distribuídos | Back-end
 | Nome                          | Matrícula      | GitHub                     |
 |-------------------------------|----------------|----------------------------|
 | Cauã Capella Pereira         | 1072512690     | [cauacapella](https://github.com/CauaCapella) |
