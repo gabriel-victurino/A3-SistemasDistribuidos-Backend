@@ -6,5 +6,5 @@
 | Gabriel Rodrigues Victurino  | 10725113959    | [gabriel-victurino](https://github.com/gabriel-victurino) |
 | João Rodrigo Fortkamp Silva  | 10725111602    | [joao-fortkamp06](https://github.com/joao-fortkamp06) |
 
-Link para o backend - https://github.com/gabriel-victurino/A3-SistemasDistribuidos-Backend.git
+Link para o Frotend - https://github.com/gabriel-victurino/A3-SistemasDistribuidos-Frontend.git
 
