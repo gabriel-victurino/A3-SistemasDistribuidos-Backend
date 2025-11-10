@@ -8,7 +8,7 @@ public class RMIServer {
 
     public static void main(String[] args) {
         try {
-            String nomeServico = "mensagens"; // Este é o nome do serviço a ser localizado
+            String nomeServico = "mensagens"; // Nome do Server
             RemoteHello hello = new HelloImpl(); //Cria o objeto a ser servido
             //Cria o stub dinamicamente do objeto a ser servido
             RemoteHello stub = (RemoteHello) UnicastRemoteObject.exportObject(hello, 0);
