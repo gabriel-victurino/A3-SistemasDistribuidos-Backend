@@ -1,11 +1,13 @@
 package modelo;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  * Classe que representa uma Movimentação de Produto.
  */
-public class Movimentacao {
+public class Movimentacao implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private int id;
     private String tipo;
