@@ -15,6 +15,33 @@ Senha: `TrabalhoA3`
 
 ---
 
+## 🗂️ Requisitos Funcionais e Não Funcionais
+
+<details>
+  <summary><strong>➕ Funcionais</strong></summary>
+
+- RF001: Cadastro de produtos (nome, preço, unidade, estoque mínimo/máximo, categoria)
+- RF002: Cadastro de categorias (nome, tamanho, embalagem)
+- RF003: Movimentação de estoque (entrada e saída)
+- RF004: Alertas automáticos de estoque (abaixo do mínimo ou acima do máximo)
+- RF005: Geração de relatórios e balanços físicos/financeiros
+- RF006: Interface gráfica para interação com o sistema
+</details>
+
+<details>
+  <summary><strong>➖ Não Funcionais</strong></summary>
+
+- RNF001: Arquitetura distribuída com RMI (Remote Method Invocation)
+- RNF002: Persistência de dados em MySQL
+- RNF003: Separação em camadas 
+- RNF004: Comunicação segura e eficiente entre cliente e servidor
+- RNF005: Boas práticas de codificação e documentação
+- RNF006: Controle de versão colaborativo (ex.: Git)
+- RNF007: Interface gráfica responsiva e amigável ao usuário
+</details>
+
+---
+
 ## 🚀 Como Rodar o Projeto
 
 1. Clone o repositório:  
