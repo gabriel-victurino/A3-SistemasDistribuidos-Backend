@@ -21,10 +21,7 @@ Senha: `TrabalhoA3`
 3. Abra o projeto na sua IDE Java  
 4. Execute a aplicação  
 
-
-
-
-
+## 🎬 Usuários
 
 | Nome                          | Matrícula      | GitHub                     |
 |-------------------------------|----------------|----------------------------|
