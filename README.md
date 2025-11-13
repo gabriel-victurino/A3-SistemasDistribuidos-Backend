@@ -6,6 +6,8 @@
 - MySQL 8.4.4
 - IDE Java (preferencialmente Apache NetBeans 26)
 - maven 3.9.6
+  
+---
 
 ⚠️ **Banco de Dados:**  
 Usuário: `a3psc`  
@@ -20,6 +22,8 @@ Senha: `TrabalhoA3`
 2. Configure o MySQL com o script disponível na pasta `/db`  
 3. Abra o projeto na sua IDE Java  
 4. Execute a aplicação  
+
+---
 
 ## 🎬 Usuários
 
