@@ -27,7 +27,7 @@ public class ServidorRMI {
             registro.rebind("ServicoMovimentacao", servicoMovimentacao);
 
             System.out.println("Servidor RMI no ar.");
-            System.out.println("Serviços disponíveis:");
+            System.out.println("Servicos disponiveis:");
             System.out.println(" - ServicoCategoria");
             System.out.println(" - ServicoProduto");
             System.out.println(" - ServicoMovimentacao");
