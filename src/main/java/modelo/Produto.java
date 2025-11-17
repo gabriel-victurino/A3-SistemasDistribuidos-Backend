@@ -2,6 +2,11 @@ package modelo;
 
 import java.io.Serializable;
 
+/**
+ * Representa um produto armazenado no estoque.
+ * Cada produto possui informações de quantidade, valores e categoria.
+ * Implementa Serializable para permitir uso com RMI.
+ */
 public class Produto implements Serializable {
     private static final long serialVersionUID = 1L;
 

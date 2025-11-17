@@ -3,6 +3,11 @@ package modelo;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+/**
+ * Representa uma movimentação de estoque, podendo ser
+ * entrada ou saída de produtos.
+ * Utiliza Serializable para transmissão via RMI.
+ */
 public class Movimentacao implements Serializable {
     private static final long serialVersionUID = 1L;
 

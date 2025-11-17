@@ -2,7 +2,13 @@ package modelo;
 
 import java.io.Serializable;
 
+/**
+ * Representa uma categoria de produtos cadastrada no sistema. Cada categoria
+ * possui nome, tamanho e tipo de embalagem. Esta classe implementa Serializable
+ * para fazer o envio de objetos via RMI.
+ */
 public class Categoria implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     private int idCategoria;
@@ -10,6 +16,9 @@ public class Categoria implements Serializable {
     private String tamanho;
     private String embalagem;
 
+    /**
+     * Construtor vazio.
+     */
     public Categoria() {
         this(0, "", "", "");
     }
@@ -54,6 +63,11 @@ public class Categoria implements Serializable {
         this.embalagem = embalagem;
     }
 
+    /**
+     * Retorna os dados do produto em uma string.
+     *
+     * @return Uma string com os dados do produto.
+     */
     @Override
     public String toString() {
         return this.nome;

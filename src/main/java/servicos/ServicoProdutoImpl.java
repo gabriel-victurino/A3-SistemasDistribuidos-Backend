@@ -6,11 +6,16 @@ import java.util.ArrayList;
 import dao.ProdutoDAO;
 import modelo.Produto;
 
-
 public class ServicoProdutoImpl extends UnicastRemoteObject implements ServicoProduto {
 
+    // DAO responsável pelas operações no banco de dados.
     private ProdutoDAO dao = new ProdutoDAO();
 
+    /**
+     * Construtor padrão necessário para exportação do objeto via RMI.
+     *
+     * @throws RemoteException Se ocorrer erro ao exportar o objeto.
+     */
     public ServicoProdutoImpl() throws RemoteException {
         super();
     }

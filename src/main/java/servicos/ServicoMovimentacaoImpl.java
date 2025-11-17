@@ -8,8 +8,14 @@ import modelo.Movimentacao;
 
 public class ServicoMovimentacaoImpl extends UnicastRemoteObject implements ServicoMovimentacao {
 
+    // DAO responsável pelas operações no banco de dados.
     private MovimentacaoDAO dao = new MovimentacaoDAO();
 
+    /**
+     * Construtor padrão necessário para exportação do objeto via RMI.
+     *
+     * @throws RemoteException Se ocorrer erro ao exportar o objeto.
+     */
     public ServicoMovimentacaoImpl() throws RemoteException {
         super();
     }
