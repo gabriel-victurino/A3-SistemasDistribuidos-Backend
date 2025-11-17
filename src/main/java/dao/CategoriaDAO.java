@@ -84,16 +84,22 @@ public class CategoriaDAO {
      * @param id
      * @return 
      */
-    public boolean deleteCategoriaBD(int id) {
-        try {
-            try (Statement stmt = ConexaoDB.getConexao().createStatement()) {
-                stmt.executeUpdate("DELETE FROM categoria WHERE id = " + id);
-            }
-        } catch (SQLException erro) {
-            System.out.println("Erro: " + erro);
-        }
-        return true;
+    public boolean deletarCategoriaBD(int id) {
+    String sql = "DELETE FROM categoria WHERE id = ?";
+
+    try (Connection conn = ConexaoDB.getConexao();
+         PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+        stmt.setInt(1, id);
+
+        int linhas = stmt.executeUpdate();
+        return linhas > 0;
+
+    } catch (Exception e) {
+        e.printStackTrace();
+        return false;
     }
+}
 
     /**
      * Edita uma Categoria específica pelo seu campo ID
@@ -213,4 +219,25 @@ public class CategoriaDAO {
         }
         return id;
     }
+    
+    public int contarProdutosNaCategoria(int idCategoria) {
+    String sql = "SELECT COUNT(*) FROM produto WHERE categoria_id = ?";
+
+    try (Connection conn = ConexaoDB.getConexao();
+         PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+        stmt.setInt(1, idCategoria);
+        ResultSet rs = stmt.executeQuery();
+
+        if (rs.next()) {
+            return rs.getInt(1);
+        }
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    return 0;
+}
+    
 }

@@ -54,11 +54,6 @@ public class Categoria implements Serializable {
         this.embalagem = embalagem;
     }
 
-    /**
-     * Retorna os dados da categoria em uma string.
-     *
-     * @return Uma string com os dados da categoria.
-     */
     @Override
     public String toString() {
         return this.nome;

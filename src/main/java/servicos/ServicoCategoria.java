@@ -16,4 +16,6 @@ public interface ServicoCategoria extends Remote {
     boolean atualizarCategoria(Categoria c) throws RemoteException;
 
     boolean deletarCategoria(int id) throws RemoteException;
+    
+    int contarProdutosNaCategoria(int idCategoria) throws RemoteException;
 }

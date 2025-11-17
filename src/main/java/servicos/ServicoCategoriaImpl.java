@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import dao.CategoriaDAO;
 import modelo.Categoria;
 
-
 public class ServicoCategoriaImpl extends UnicastRemoteObject implements ServicoCategoria {
 
-    private CategoriaDAO dao;
+    private CategoriaDAO dao = new CategoriaDAO();
 
-    public ServicoCategoriaImpl () throws RemoteException {
+
+    public ServicoCategoriaImpl() throws RemoteException {
         dao = new CategoriaDAO();
     }
 
@@ -37,6 +37,19 @@ public class ServicoCategoriaImpl extends UnicastRemoteObject implements Servico
 
     @Override
     public boolean deletarCategoria(int id) throws RemoteException {
-        return dao.deleteCategoriaBD(id);
+    int qtdProdutos = dao.contarProdutosNaCategoria(id);
+
+    if (qtdProdutos > 0) {
+        return false; 
     }
+
+    return dao.deletarCategoriaBD(id); 
 }
+    
+    @Override
+    public int contarProdutosNaCategoria(int idCategoria) throws RemoteException {
+        return dao.contarProdutosNaCategoria(idCategoria);
+    }
+
+  }
+
